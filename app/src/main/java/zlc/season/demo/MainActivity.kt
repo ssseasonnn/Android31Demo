@@ -1,5 +1,6 @@
 package zlc.season.demo
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.WindowCompat
@@ -24,6 +25,15 @@ class MainActivity : AppCompatActivity() {
         binding.content.btnClipboard.setOnClickListener {
             showFragment(ClipboardFragment())
         }
+
+        binding.content.btnPredictiveBack.setOnClickListener {
+            showFragment(PredictiveBackFragment())
+        }
+
+        binding.content.btnForeground.setOnClickListener {
+            startService(Intent(this@MainActivity, ForegroundService::class.java))
+        }
+
         binding.fab.setOnClickListener { view ->
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                 .setAnchorView(R.id.fab)

@@ -24,6 +24,18 @@
             android:layout_height="wrap_content"
             android:text="Clipboard" />
 
+        <Button
+            android:id="@+id/btn_predictive_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PredictiveBack" />
+
+        <Button
+            android:id="@+id/btn_foreground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Foreground Service" />
+
     </LinearLayout>
 
     <FrameLayout
