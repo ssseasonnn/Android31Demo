@@ -21,6 +21,9 @@ class MainActivity : AppCompatActivity() {
             showFragment(NotificationFragment())
         }
 
+        binding.content.btnClipboard.setOnClickListener {
+            showFragment(ClipboardFragment())
+        }
         binding.fab.setOnClickListener { view ->
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                 .setAnchorView(R.id.fab)

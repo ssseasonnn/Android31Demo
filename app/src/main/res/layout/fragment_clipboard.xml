@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/test_str"
+                android:textIsSelectable="true" />
+
+            <Button
+                android:id="@+id/btn_copy_normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="复制文本" />
+
+            <TextView
+                android:id="@+id/tv_private"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/test_str_pass"
+                android:textIsSelectable="true"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btn_copy_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="复制密码" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</FrameLayout>
